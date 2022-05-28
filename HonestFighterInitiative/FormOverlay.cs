@@ -479,7 +479,7 @@ namespace HonestFighterInitiative
 
                 for (int i = 0; i < pLatencies.Count - 1; i++)
                 {
-                    double diff = pLatencies[i + 1] - pLatencies[i];
+                    double diff = Math.Abs(pLatencies[i + 1] - pLatencies[i]);
                     latenciesDifferences.Add(diff);
                 }
 
